@@ -21,7 +21,7 @@ Status Delete(Index I, List L, ElementType *e)
     free(nowNode);
     return SUCCESS;
 }
-Status InsertList(ElementType X, Index I, List L)
+Status Insert(ElementType X, Index I, List L)
 {
     Position preNode, nowNode, newNode;
     preNode = FindPrevious(I, L);
@@ -47,6 +47,18 @@ Position FindPrevious(Index I, List L)
     if(j!=I-1)
         return NULL;
     return P;
+}
+void DestroyList(List L)
+{
+    Position P, temp;
+    P=L;
+    while(P!=NULL)
+    {
+        temp = P->next;
+        P->next=NULL;
+        free(P);
+        P=temp;
+    }
 }
 void InitList(List *L)
 {

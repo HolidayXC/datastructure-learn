@@ -9,14 +9,15 @@ typedef ListNode List; // 表
 typedef ListNode Position; // 位置
 typedef int Index;
 typedef int Status;
-typedef int ElementType; // 为了省事将数据类型定义为整型
+typedef int ElementType; // 数据类型定义为整型
 List MakeEmpty(List L); // 置空
 int IsEmpty(List L);
 int IsLast(Position P);
 Position Find(Index I, List L);
 Status Delete(Index I, List L, ElementType *e);
-Status InsertList(ElementType X, Index I, List L);
+Status Insert(ElementType X, Index I, List L);
 Position FindPrevious(Index I, List L);
+void DestroyList(List L);
 void InitList(List *L);
 void Traverse(List L);
 #endif /*__LIST__H*/
