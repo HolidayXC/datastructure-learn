@@ -20,4 +20,4 @@ Position FindPrevious(Index I, List L);
 void DestroyList(List L);
 void InitList(List *L);
 void Traverse(List L);
-#endif /*__LIST__H*/
+#endif
