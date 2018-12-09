@@ -101,6 +101,8 @@ int main()
     for(i=1;i<=5;i++)
         Insert(dlist, i, i*2-1);
     Traverse(dlist);
+    Insert(dlist, 4, 2);
+    Traverse(dlist);
     if(Delete(dlist, 4, &e)==1){
         printf("第4个位置的元素被删除:%d\n",e);
         Traverse(dlist);
