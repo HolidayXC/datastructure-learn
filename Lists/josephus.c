@@ -29,11 +29,11 @@ void Traverse(DCLinkedList);
 int main(){
     int n, k, m;
     DCLinkedList list;
-    printf("输入围成一环的人数n = ");
+    printf("输入围成一环的人数n ( > 0) = ");
     scanf("%d",&n);
-    printf("输入开始报数的编号k = ");
+    printf("输入开始报数的编号k ( > 0) = ");
     scanf("%d",&k);
-    printf("输入数到某个数出列m = ");
+    printf("输入数到某个数出列m ( > 0) = ");
     scanf("%d",&m);
     InitList(&list);
     CreateRing(list,n);
